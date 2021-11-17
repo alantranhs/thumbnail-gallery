@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link type="text/css" rel="stylesheet" href="/tmp/libs/lightgallery/lightgallery.css" />
+    <link rel="stylesheet" href="/tmp/css/style.css">
+
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center pt-5">Thumbnails Gallery</h1>
+
+    <div class="gallery">
+        <div class="gallery__slide" id="lightgallery">
+            <a class="js-slider" href="images/1.jpeg">
+                <img src="images/1.jpeg">
+            </a>
+            <a class="js-slider" href="images/2.jpeg">
+                <img src="images/2.jpeg" />
+            </a>
+            <a class="js-slider" href="images/3.jpeg">
+                <img src="images/3.jpeg" />
+            </a>
+        </div>
+
+        <div class="gallery__image">
+            <img src="images/1.jpeg" alt="" class="js-img-thumb img-thumb" onClick="currentDiv(1)" />
+            <img src="images/2.jpeg" alt="" class="js-img-thumb img-thumb" onClick="currentDiv(2)" />
+            <img src="images/3.jpeg" alt="" class="js-img-thumb img-thumb" onClick="currentDiv(3)" />
+        </div>
+    </div>
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+<script src="tmp/libs/lightgallery//lightgallery.umd.js"></script>
+<!-- Or use the minified version -->
+<script src="tmp/libs/lightgallery//lightgallery.min.js"></script>
+
+<!-- lightgallery plugins -->
+<script src="tmp/libs/lightgallery/lg-thumbnail.umd.js"></script>
+<script src="tmp/libs/lightgallery/lg-zoom.umd.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
